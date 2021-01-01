@@ -1,0 +1,21 @@
+#!/bin/mksh
+# requires imagemagick (convert) and a netcat (nc)
+
+HOST=esp2
+
+[ x"$1" == x"" ] &&\
+    echo "usage: $0 image_file" &&\
+    exit
+
+[ x"$2" == x"norot" ] ||\
+    DO_ROT="-rotate 90"
+
+PN=$(readlink -f -n "$0") || PN="$0"
+DN=$(dirname "$PN")
+TN=$(mktemp)
+
+convert "$1" $DO_ROT -adaptive-resize 240x320\! "$TN.rgb" &&\
+    "$DN"/to_565 "$TN.rgb" > "$TN" &&\
+    cat "$TN" | nc $HOST 9341 &&\
+    rm -f "$TN" "$TN.rgb"
+

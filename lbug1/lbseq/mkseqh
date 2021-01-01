@@ -1,0 +1,4 @@
+#!/bin/sh
+./lbseq.py seq.bin < $@
+bin2c seq < seq.bin > ../seq.h
+touch ../lbug1.cpp
