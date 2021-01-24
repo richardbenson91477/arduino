@@ -1,7 +1,7 @@
 // based originally on:
 //   SSD1306xLED - Drivers for SSD1306 controlled dot matrix OLED/PLED 128x64
 //   author: Neven Boyanov
-// richardbenson91477@gmail.com 1/30/18
+// richardbenson91477@protonmail.com 1/30/18
 
 #include <Arduino.h>
 #include "OLED_idm.h"

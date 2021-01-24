@@ -1,7 +1,7 @@
 // ArduinoNunchuk.cpp - Improved Wii Nunchuk library for Arduino
 // Copyright 2011-2013 Gabriel Bianconi, http://www.gabrielbianconi.com/
 // Project URL: http://www.gabrielbianconi.com/projects/arduinonunchuk/
-//// mod by richardbenson91477@gmail.com 1/30/18
+//// mod by richardbenson91477@protonmail.com 1/30/18
 #ifndef NUNCHUK_IDM_H
 #define NUNCHUK_IDM_H
 #include <Arduino.h>
