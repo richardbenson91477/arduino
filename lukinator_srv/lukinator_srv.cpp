@@ -15,7 +15,7 @@ void srv_fn () {
         dlog::debug ("srv_fn", "received ALERT");
         if (! net1.send_str ("ALERT ACK"))
             dlog::error ("srv_fn", "send_str");
-        system ("/local/bin/alert");
+        system ("/usr/local/bin/alert");
     }
     else {
         dlog::error ("srv_fn: unknown request", b_in);

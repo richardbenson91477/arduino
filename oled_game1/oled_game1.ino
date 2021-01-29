@@ -4,7 +4,7 @@
 //#include <avr/power.h>
 
 // detect digispark/tiny
-#ifdef USI_BUF_SIZE
+#ifdef ATTINY_CORE
   #define PIN_PADDLE A3
   #define PIN_RANDOM A0
 #else
@@ -62,4 +62,3 @@ void loop () {
 
     delay (20);
 }
-

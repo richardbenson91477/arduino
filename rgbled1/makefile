@@ -1,1 +1,0 @@
-../builder-uno.mak
